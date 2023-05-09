@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mircosoft Landing Page</title>
     <link rel="stylesheet" href="style.css" />
+   <script src="jav.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,7 +27,7 @@
         <div class="logo text-center md:order-first flex">
             <div><img class="w-28" src="mic.png" alt="" srcset="" /></div>
             <div
-                class="absolute bg-gray-400 w-fit md:w-auto inset-0 md:bg-white md:static md:flex md:mx-4 md:space-x-3 -translate-x-96 md:translate-x-0 features">
+                 id="index" class="absolute bg-gray-400 w-fit  md:w-auto inset-0 md:bg-white md:static md:flex md:mx-4 md:space-x-3 -translate-x-96 md:translate-x-0 features">
                 <div class="f-item">Microsoft 365</div>
                 <div class="f-item">Teams</div>
                 <div class="f-item">Windows</div>
@@ -70,24 +71,36 @@
 
 <div class="promotion flex flex-col md:flex-row md:space-x-4 md:justify-center  mt-2 space-y-2">
 
-<div class="item flex flex-col justify-center items-center space-y-2">   
+<div class="item flex flex-col justify-center items-center space-y-2 mt-2">   
 <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/icon-LL-Windows-Logo-80x80?wid=40&hei=40" alt="">
-<span>Choose Your Mircrosoft 365 plan</span>
+<span class="  text-blue-500 font-semibold text-sm text-center cursor-pointer hover:text-blue-700 hover:underline">Choose Your Mircrosoft 365 plan</span>
 </div>
 
 <div class="item flex flex-col  justify-center items-center space-y-2">
 <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/icon-LL-Tablet-Kickstand-Landscape-Mode-Fluent-80x80?wid=40&hei=40" alt="">
-<span>Explore Surface devices</span>
+<span class=" text-blue-500 font-semibold text-sm text-center cursor-pointer hover:text-blue-700 hover:underline">Explore Surface devices</span>
 </div>
 
 <div class="item flex flex-col justify-center items-center space-y-2">
 <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/icon-LL-Xbox-Logo-80x80?wid=40&hei=40" alt="">
-<span>Buy Xbox Games</span>
+<span class=" text-blue-500 font-semibold text-sm text-center cursor-pointer hover:text-blue-700 hover:underline">Buy Xbox Games</span>
 </div>
 
 </div>
+<script>
+
+let index=document.querySelector("#index")
+let hamburger=document.querySelector(".hamburger")
+
+hamburger.addEventListener("click",()=>{
+    index.classList.toggle("-translate-x-96");
+    index.classList.toggle("translate-x-2")
+    index.classList.toggle("w-fit");
+});
 
 
+console.log(index,hamburger)
+</script>
 </body>
 
 </html>
