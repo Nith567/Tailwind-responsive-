@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Login or signup</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mircosoft Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="bg-gray-100 ">
+
+<body>
+    <div class="flex justify-between navbar items-center p-3">
+        <div class="flex justify-center items-center">
+            <div class="hamburger p-4 block cursor-pointer md:hidden">
+                <div class="lines h-0.5 my-1 w-6 bg-black"></div>
+                <div class="lines h-0.5 my-1 w-6 bg-black"></div>
+                <div class="lines h-0.5 my-1 w-6 bg-black"></div>
+            </div>
+            <div class="search md:hidden">Search</div>
+        </div>
+
+        <div class="logo text-center md:order-first flex">
+            <div><img class="w-28" src="mic.png" alt="" srcset="" /></div>
+            <div
+                class="absolute bg-gray-400 w-fit md:w-auto inset-0 md:bg-white md:static md:flex md:mx-4 md:space-x-3 -translate-x-96 md:translate-x-0 features">
+                <div class="f-item">Microsoft 365</div>
+                <div class="f-item">Teams</div>
+                <div class="f-item">Windows</div>
+                <div class="f-item">Surface</div>
+                <div class="f-item">Xbox</div>
+                <div class="f-item">Support</div>
+            </div>
+        </div>
+
+        <div class="cart text-center md:order-3 flex flex-row space-x-2">
+            
+            <div class="search hidden md:inline font-thin">Search
+            </div>
+            <div><img class="w-4 h-6" src="search.svg" alt="" /></div>
+
+            <div class="search hidden md:inline font-thin">Cart
+            </div>
+            <div><img class="w-4 h-6 brightness-50" src="cart.svg" alt="" /></div>
+        </div>
+    </div>
+
+    <div class="slider bg-[#f2f2f2] flex flex-col-reverse md:flex-row md:justify-center mx-2">
+        <div class="left mt-3 mx-4 flex flex-col justify-center md:items-baseline py-10">
+            <h1 class="text-4xl mx-4">Surface Laptop 4</h1>
+            <div class="content mx-4 p-2  text-center md:text-left inline-block break-words font-serif">
+                Tablet Versatility and laptop power - All in one ultra-portable device
+            </div>
+            <div class="flex justify-center">
+                <button class="text-cyan-600 bg-black w-fit p-4 my-4 rounded-sm">
+                    Shop Now ->
+                </button>
+            </div>
+        </div>
+        <div class="right">
+            <img src="sur1.webp" alt="no" srcset="" />
+        </div>
+    </div>
+
+
+
+
+<div class="promotion flex flex-col md:flex-row md:space-x-4 md:justify-center  mt-2 space-y-2">
+
+<div class="item flex flex-col justify-center items-center space-y-2">   
+<img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/icon-LL-Windows-Logo-80x80?wid=40&hei=40" alt="">
+<span>Choose Your Mircrosoft 365 plan</span>
+</div>
+
+<div class="item flex flex-col  justify-center items-center space-y-2">
+<img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/icon-LL-Tablet-Kickstand-Landscape-Mode-Fluent-80x80?wid=40&hei=40" alt="">
+<span>Explore Surface devices</span>
+</div>
+
+<div class="item flex flex-col justify-center items-center space-y-2">
+<img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/icon-LL-Xbox-Logo-80x80?wid=40&hei=40" alt="">
+<span>Buy Xbox Games</span>
+</div>
+
+</div>
+
+
 </body>
+
 </html>
