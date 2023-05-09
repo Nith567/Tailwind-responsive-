@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+
+.btn{
+    @apply  bg-purple-800 active:bg-purple-600 transition cursor-pointer px-3 rounded-2xl text-white hover:text-slate-600 hover:border-2 hover:border-red-600 hover:bg-white hover:ease-in hover:-translate-y-1 
+
+}
+@tailwind utilities;
